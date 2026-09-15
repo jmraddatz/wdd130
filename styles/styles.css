@@ -1,3 +1,10 @@
+:root {
+    --common-border: 1px solid black;
+    --center-text: center;
+    --auto-height: auto;
+    --small-value: 1rem;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -19,8 +26,8 @@ h1 {
 
 main img {
     width: 150px;
-    height: auto;
-    border: 1px solid black;
+    height: var(--auto-height);
+    border: var(--common-border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -31,21 +38,21 @@ p {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    margin: var(--small-value);
+    border: var(--common-border);
+    padding: var(--small-value);
     background-color: #eee;
     color: #333;
-    text-align: center;
+    text-align: var(--center-text);
 }
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--auto-height);
 }
 
 footer {
     margin-top: 10px;
     border-top: 3px solid rgb(0 0 0 / 0.2);
-    text-align: center;
+    text-align: var(--center-text);
 }
