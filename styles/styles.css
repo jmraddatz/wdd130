@@ -1,7 +1,5 @@
 :root {
     --common-border: 1px solid black;
-    --center-text: center;
-    --auto-height: auto;
     --small-value: 1rem;
 }
 
@@ -26,7 +24,7 @@ h1 {
 
 main img {
     width: 150px;
-    height: var(--auto-height);
+    height: auto;
     border: var(--common-border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
@@ -43,16 +41,16 @@ aside {
     padding: var(--small-value);
     background-color: #eee;
     color: #333;
-    text-align: var(--center-text);
+    text-align: center;
 }
 
 aside img {
     width: 200px;
-    height: var(--auto-height);
+    height: auto;
 }
 
 footer {
     margin-top: 10px;
     border-top: 3px solid rgb(0 0 0 / 0.2);
-    text-align: var(--center-text);
+    text-align: center;
 }
