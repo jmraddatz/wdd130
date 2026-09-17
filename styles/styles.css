@@ -65,6 +65,10 @@ aside h2 {
     top: 3rem;
 }
 
+aside p {
+    width: auto;
+}
+
 footer {
     margin-top: 10px;
     border-top: 3px solid rgb(0 0 0 / 0.2);
