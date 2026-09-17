@@ -1,3 +1,7 @@
+/* Add <a href="https://www.linkedin.com/in/john-raddatz/" target="_blank" > LinkedIn Profile</a > 
+<a href="https://www.facebook.com/makay.raddatz.3/" target="_blank" > Facebook</a > 
+to index.html after week02 project is graded*/
+
 :root {
     --common-border: 1px solid black;
     --small-value: 1rem;
@@ -40,7 +44,8 @@ h1 {
 }
 
 p {
-    padding: 0;
+    padding: 5px;
+    width: 50rem;
 }
 
 ul {
@@ -49,15 +54,11 @@ ul {
 
 aside {
     width: 33rem;
-    border: 1px solid #b71234;
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    margin: 1rem;
+    position: relative;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
 }
 
@@ -76,4 +77,13 @@ footer {
     margin-top: 10px;
     border-top: 3px solid rgb(0 0 0 / 0.2);
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    border: 1px solid #b71234;
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    margin: 1rem;
 }
