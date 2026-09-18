@@ -1,0 +1,95 @@
+:root {
+    --primary-color: rgb(45, 60, 99);
+    /* navy blue */
+    --secondary-color: rgb(180, 143, 114);
+    /* Sand */
+    --accent-color: rgb(227, 185, 0);
+    /* Mustard Yellow */
+    --text-color1: white;
+    --text-color2: rgb(42, 42, 42);
+    /* Off-white */
+    --heading-font: "Roboto";
+    --body-font: "Open Sans";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(body-font);
+    color: var(--text-color2);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--text-color1);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color1)
+}
+
+h2 {
+
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color1);
+}
+
+article {
+    position: absolute;
+    top: 268px;
+    width: 96%;
+    height: 150px;
+    padding: 2px;
+    background-color: var(--secondary-color);
+    text-align: left;
+}
+
+.hero article img {
+    float: right;
+    width: 120px;
+    padding: 8px;
+    box-shadow: rgb(245, 245, 245)
+}
