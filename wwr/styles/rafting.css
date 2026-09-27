@@ -1,7 +1,7 @@
 :root {
     --primary-color: rgb(45, 60, 99);
     /* navy blue */
-    --secondary-color: rgb(180, 143, 114);
+    --secondary-color: rgb(207, 179, 158);
     /* Sand */
     --text-color1: white;
     --text-color2: rgb(42, 42, 42);
@@ -26,6 +26,45 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: var(--secondary-color);
+}
+
+header img {
+    height: 110px;
+    width: auto;
+    padding: 10px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.532);
+    /* border: 3px solid gray; */
+
+}
+
+li {
+    padding: 2px 6px;
+    border-left: 2px solid rgb(47, 139, 215);
+}
+
+li:first-child {
+    border-left: none;
 }
 
 h1,
