@@ -54,7 +54,6 @@ ul {
     justify-items: center;
     list-style: none;
     background-color: rgba(255, 255, 255, 0.532);
-    /* border: 3px solid gray; */
 
 }
 
@@ -65,6 +64,11 @@ li {
 
 li:first-child {
     border-left: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
 }
 
 h1,
@@ -79,10 +83,6 @@ section,
 article {
     margin: 16px;
     padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .hero {
@@ -128,4 +128,43 @@ h2 {
     float: right;
     width: 120px;
     padding: 8px;
+}
+
+.adventures {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.adventures figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventures img {
+    width: 140px;
+    height: auto;
+    padding: 5px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    height: 100px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    padding: 5px;
 }
