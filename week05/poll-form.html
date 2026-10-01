@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Form</title>
+</head>
+
+<header>
+    <h1>WDD 130 | HTML Form - User Poll</h1>
+</header>
+
+<main>
+    <form>
+        <label>Full Name: <input type="text" id="fullname" name="fullname" required>
+        </label>
+    </form>
+
+    <form>
+        <label>Email Address: <input type="email" id="useremail" name="useremail" required></label>
+    </form>
+
+    <form>
+        <label for="browser">What is your favorite browser?</label>
+        <select name="browser" id="browser">
+            <option value="chrome">Chrome</option>
+            <option value="safari">Safari</option>
+            <option value="edge">Edge</option>
+            <option value="brave">Brave</option>
+            <option value="other">Other</option>
+        </select>
+    </form>
+
+    <form>
+        <label for="pet">Do you have a household pet?<input type="checkbox" id="pet"
+              name="pet"></label>
+    </form>
+
+    <form>
+        <label for="feedback">List the places you have lived:</label>
+        <textarea id="feedback" name="feedback" rows="4"
+          placeholder="ex: Salt Lake City, Utah, United States"></textarea>
+    </form>
+
+    <form>
+        <button type="submit">Submit Poll</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 | HTML Form - User Poll Activity | Makay Raddatz</p>
+</footer>
+
+</html>
