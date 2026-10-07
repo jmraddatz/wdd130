@@ -56,7 +56,7 @@ nav ul {
 
 }
 
-.button a {
+.button_bar a {
     padding: 5px;
     border-left: 2px solid var(--primary-color);
 }
@@ -85,7 +85,8 @@ article {
     padding: 8px;
 }
 
-.hero {
+.hero,
+.info {
     position: relative;
 }
 
@@ -93,6 +94,48 @@ article {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.info {
+    padding: 3.5rem;
+    padding-bottom: 0;
+    text-align: center;
+    margin: 0, 100rem;
+    border: 1px solid black;
+}
+
+.info p {
+    margin: 0;
+}
+
+.map {
+    float: left;
+    padding: 5px;
+}
+
+form {
+    display: grid;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+form input,
+form textarea,
+form select {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.purpose {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.purpose label {
+    display: block;
 }
 
 h1 {
@@ -147,6 +190,10 @@ h2 {
     width: 140px;
     height: auto;
     padding: 5px;
+}
+
+.employee {
+    clear: both;
 }
 
 footer {

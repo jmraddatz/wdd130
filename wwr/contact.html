@@ -14,7 +14,7 @@
 <body>
     <header>
         <img src="images/rafting-logo.jpg" alt="Rafting Logo">
-        <nav class="button">
+        <nav class="button_bar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -25,7 +25,9 @@
     </header>
 
     <main>
-        <h1>Travel to the Edge: Rafting Adventures</h1>
+        <div class="hero">
+            <h1>Travel to the Edge: Rafting Adventures</h1>
+        </div>
         <div class="info">
             <p>522 South River Way</p>
             <p>Orem, Utah</p>
@@ -36,36 +38,50 @@
         <div class="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6067.67009649919!2d-111.44915694622529!3d40.501030494260846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9a86c225b48f%3A0x3e9d750ccc30098a!2sProvo%20River!5e0!3m2!1sen!2sus!4v1791256902775!5m2!1sen!2sus"
-              width="600" height="450" allowfullscreen="" loading="lazy"
+              width=390 height=350 allowfullscreen="" loading="lazy"
               referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
 
         <form>
-            <fieldset>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="First and Last">
 
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Email">
+            <div class="purpose">
 
                 <p>Why are you contacting us today?</p>
-                <input type="radio" id="genera" name="purpose" value="General Inquiry">
 
-                <label for="general">General Inquiry</label><br>
+                <label for="general">General Inquiry</label>
+                <input type="radio" id="general" name="purpose" value="General Inquiry">
+
+                <label for="reservation">Reservation Question</label>
                 <input type="radio" id="reservation" name="purpose" value="Reservation Question">
 
-                <label for="reservation">Reservation Question</label><br>
+                <label for="website">Website Suggestion</label>
                 <input type="radio" id="website" name="purpose" value="Website Suggestion">
+            </div>
 
-                <label for="website">Website Suggestion</label><br>
-                <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"
+              placeholder="Enter your request here"></textarea>
+            <label for="message">Message:</label>
 
-                <textarea id="message" name="message" rows="4"></textarea><br>
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                <input type="checkbox" id="subscribe" name="subscribe">
-            </fieldset>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+
+
+            <div class="button">
+                <button type="submit">Submit Request</button>
+            </div>
         </form>
 
+        <section>
+            <div class="employee">
+                <img src="images/employee1.webp" alt="John" width="150">
+                <img src="images/employee2.webp" alt="Anna" width="150">
+                <img src="images/employee3.webp" alt="Kristy" width="150">
+            </div>
+        </section>
     </main>
     <footer>
         <p> ©2026 🏝️ Travel to The Edge Rafting Adventures 🏝️ Makay Raddatz</p>
