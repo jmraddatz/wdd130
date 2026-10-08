@@ -100,7 +100,6 @@ article {
     padding: 4rem;
     padding-bottom: 0;
     text-align: center;
-    border: 1px 0 solid black;
 }
 
 .info p {
@@ -118,6 +117,7 @@ form {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 0 10px;
+    background-color: rgb(200, 216, 255);
 
 }
 
@@ -130,7 +130,7 @@ form input,
 form textarea,
 form select {
     margin-top: .5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
 }
 
 form p {
@@ -149,7 +149,9 @@ label[for="email"] {
     grid-template-columns: 1fr 2fr;
 }
 
-label[for="message"] {}
+.column2 input {
+    cursor: pointer;
+}
 
 textarea {
     grid-column: span 2;
@@ -159,8 +161,22 @@ textarea {
     grid-column: span 2;
 }
 
-.button {
+.subscribe input {
+    cursor: pointer;
+}
+
+button {
     padding: 3px;
+    width: 110px;
+    border-radius: 8px;
+}
+
+.button {
+    padding: 5px;
+}
+
+button:hover {
+    background-color: var(--text-color1);
 }
 
 h1 {
