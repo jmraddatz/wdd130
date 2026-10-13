@@ -3,9 +3,8 @@
     /* navy blue */
     --secondary-color: rgb(207, 179, 158);
     /* Sand */
-    --text-color1: white;
+    --text-color1: #f3f3f3;
     --text-color2: rgb(42, 42, 42);
-    /* Off-white */
     --heading-font: "Roboto";
     --body-font: "Open Sans";
 }
@@ -67,7 +66,7 @@ nav li:first-child a {
 
 li a {
     text-decoration: none;
-    color: black;
+    color: var(--text-color2);
 
 }
 
@@ -96,6 +95,264 @@ article {
     height: auto;
 }
 
+h1 {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color1);
+    border: 2px solid #fff;
+}
+
+h2 {
+
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color1);
+}
+
+.adventures figcaption,
+.featured figcaption {
+    font-family: "Caveat", cursive;
+}
+
+.hero article {
+    position: absolute;
+    top: 268px;
+    width: 96%;
+    height: 150px;
+    padding: 2px;
+    background-color: var(--secondary-color);
+    text-align: left;
+}
+
+.hero article img {
+    float: right;
+    width: 120px;
+    padding: 8px;
+    filter: opacity(0.95);
+}
+
+.adventures {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.adventures figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventures img {
+    width: 140px;
+    height: auto;
+    padding: 5px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    height: 100px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Start Home page */
+.home_message {
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+    font-size: 35px;
+    font-family: "Caveat", cursive;
+    color: var(--primary-color)
+}
+
+.newsletter {
+    display: grid;
+    position: absolute;
+    padding: 6px;
+    top: 24.35rem;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.newsletter h2 {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.newsletter label {
+    color: var(--text-color2)
+}
+
+.newsletter button {
+    width: 100%;
+    font-weight: 600;
+}
+
+.newsletter button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color1)
+}
+
+.midbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-around;
+    text-align: center;
+    text-decoration: none;
+}
+
+.services h3 {
+    font-family: var(--heading-font);
+    color: var(--text-color2);
+    margin: 5px;
+
+}
+
+.alt_trips {
+    border: 2px solid var(--primary-color);
+}
+
+.midbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.alt_trips:hover {
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+}
+
+.alt_trips h3 {
+    font-family: var(--heading-font);
+    font-size: 20px;
+    margin: 5px;
+}
+
+/* End Home page */
+
+/* Start Trips page */
+.contact_link {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 22px;
+    text-align: center;
+    background-color: #f3f3f3;
+    padding-bottom: 30px;
+}
+
+.contact_link ul {
+    grid-column: 2;
+    background-color: var(--secondary-color);
+    padding-bottom: 17px;
+    margin-top: 92px;
+}
+
+.contact_link a {
+    color: var(--primary-color)
+}
+
+.contact_link a:hover {
+    color: rgb(81, 81, 220);
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.featured figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured img {
+    width: 100%;
+    padding: 4px;
+}
+
+.featured figcaption {
+    font-size: 20px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.featured p {
+    border: 1.5px solid var(--primary-color);
+}
+
+.equipment {
+    padding-bottom: 2rem;
+}
+
+.equipment p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color2);
+    text-align: center;
+    padding: 3px;
+}
+
+.equipment a {
+    color: var(--primary-color);
+}
+
+.equipment a:hover {
+    color: rgb(81, 81, 220);
+}
+
+.trips {
+    padding: 3px;
+    margin: 5px;
+    border: 2px solid var(--text-color2);
+}
+
+.trips td {
+    padding: 5px;
+    border: 1px solid var(--text-color2);
+    /* border-bottom: none; */
+    border-right: none;
+}
+
+.trips td:first-child {
+    border-left: 1px solid var(--text-color2);
+    border-right: 1px solid var(--text-color2);
+}
+
+.trips td:last-child {
+    border-right: 1px solid var(--text-color2);
+    border-bottom: 1px solid var(--text-color2);
+}
+
+.trips tr:hover {
+    background-color: rgb(200, 216, 255);
+}
+
+/* End Trips page */
+
+/* Start Contact Us page */
 .info {
     padding: 4rem;
     padding-bottom: 0;
@@ -112,7 +369,7 @@ article {
 
 }
 
-form {
+.contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -176,61 +433,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--text-color1);
-}
-
-h1 {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    padding: 12px;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: var(--text-color1)
-}
-
-h2 {
-
-    width: 100%;
-    padding: 12px;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: var(--text-color1);
-}
-
-.hero article {
-    position: absolute;
-    top: 268px;
-    width: 96%;
-    height: 150px;
-    padding: 2px;
-    background-color: var(--secondary-color);
-    text-align: left;
-}
-
-.hero article img {
-    float: right;
-    width: 120px;
-    padding: 8px;
-    filter: opacity(0.95);
-}
-
-.adventures {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-}
-
-.adventures figure {
-    margin: 0;
-    text-align: center;
-}
-
-.adventures img {
-    width: 140px;
-    height: auto;
-    padding: 5px;
+    background-color: #f3f3f3;
 }
 
 .employee {
@@ -255,23 +458,4 @@ h2 {
     border: 5px solid var(--primary-color)
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    align-items: center;
-    height: 100px;
-}
-
-footer p {
-    text-align: center;
-}
-
-.socialmedia {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.socialmedia a {
-    text-decoration: none;
-    padding: 5px;
-}
+/* End Contact Us page */
