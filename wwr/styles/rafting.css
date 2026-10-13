@@ -107,7 +107,6 @@ h1 {
 }
 
 h2 {
-
     width: 100%;
     padding: 12px;
     text-align: center;
@@ -263,7 +262,7 @@ footer p {
     padding-bottom: 30px;
 }
 
-.contact_link ul {
+.contact_link section {
     grid-column: 2;
     background-color: var(--secondary-color);
     padding-bottom: 17px;
@@ -325,14 +324,13 @@ footer p {
 
 .trips {
     padding: 3px;
-    margin: 5px;
+    margin: 5px 20px 10px 20px;
     border: 2px solid var(--text-color2);
 }
 
 .trips td {
     padding: 5px;
     border: 1px solid var(--text-color2);
-    /* border-bottom: none; */
     border-right: none;
 }
 
@@ -346,8 +344,12 @@ footer p {
     border-bottom: 1px solid var(--text-color2);
 }
 
-.trips tr:hover {
-    background-color: rgb(200, 216, 255);
+.trips td a {
+    color: var(--primary-color);
+}
+
+.trips td a:hover {
+    color: rgb(81, 81, 220);
 }
 
 /* End Trips page */
