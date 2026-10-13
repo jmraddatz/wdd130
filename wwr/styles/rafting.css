@@ -334,6 +334,11 @@ footer p {
     border-right: none;
 }
 
+.trips h2 {
+    margin-bottom: 8px;
+    border-bottom: 10px solid var(--secondary-color)
+}
+
 .trips td:first-child {
     border-left: 1px solid var(--text-color2);
     border-right: 1px solid var(--text-color2);
